@@ -17,26 +17,34 @@ public class ClassStudy_2 {
 		//학생의 수 만큼 정보를 입력 - 이름, 번호, 국어, 영어, 수학
 		//총점 평균
 		for(int i=0;i<sts.length;i++) {
-			Student sts = new Student;
+			Student st = new Student();
 			System.out.println("학생"+(i+1)+"의 이름");
-			sts.name = sc.next();
+			st.name = sc.next();
 			System.out.println("학생"+(i+1)+"의 번호");
-			sts.num = sc.nextInt();
+			st.num = sc.nextInt();
 			System.out.println("학생"+(i+1)+"의 국어점수");
-			sts.kor = sc.nextInt();
+			st.kor = sc.nextInt();
 			System.out.println("학생"+(i+1)+"의 영어점수");
-			sts.eng = sc.nextInt();
+			st.eng = sc.nextInt();
 			System.out.println("학생"+(i+1)+"의 수학점수");
-			sts.math = sc.nextInt();
-			sts.total = sts.kor+sts.eng+sts.math;
-			sts.avg = sts.total/3.0;
+			st.math = sc.nextInt();
+			st.total = st.kor+st.eng+st.math;
+			st.avg = st.total/3.0;
+			sts [i] = st;
 		}
 		
 		System.out.println("이름\t번호\t국어점수\t영어점수\t수학점수\t총점\t평균");
 		System.out.println("========================================");
-		for(int i=0; i>sts.length;i++) {
+		for(int i=0; i<sts.length;i++) {
 			
-			System.out.println(" ");
+			System.out.print(sts[i].name+"\t");
+			System.out.print(sts[i].num+"\t");
+			System.out.print(sts[i].kor+"\t");
+			System.out.print(sts[i].eng+"\t");
+			System.out.print(sts[i].math+"\t");
+			System.out.print(sts[i].total+"\t");
+			System.out.println(sts[i].avg);
+			System.out.println("----------------------------");
 		}
 		
 		//모든 학생의 정보 출력
