@@ -1,4 +1,4 @@
-package com.bh.ex1;
+  package com.bh.ex1;
 
 public class Ex1Main2 {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Ex1Main2 {
 		//펫 키우기
 		//이름 레벨 친밀도 출력
 		Pet pet1 = new Pet();
-		pet1.name = "human size puppy";
+		pet1.name = "백현이";
 		
 		Pet pet2 = new Pet();
 		pet2.name = "춘식이";
@@ -19,6 +19,8 @@ public class Ex1Main2 {
 		pets[0] = pet1;
 		pets[1] = new Pet();
 		pets[1].name = "구리";
+		
+		System.out.println(pets[0].name); //백현이
 		
 		for(int i=0;i<pets.length;i++) {
 			System.out.println(pets[i].name);

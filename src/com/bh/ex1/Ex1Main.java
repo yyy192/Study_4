@@ -1,4 +1,4 @@
-package com.bh.ex1;
+ package com.bh.ex1;
 
 public class Ex1Main {
 	
@@ -42,6 +42,9 @@ public class Ex1Main {
 		//ch가 가지고 있는 무기의 이름을 변경하고 출력
 		ch.wp.name = "권총";
 		System.out.println("변경된 무기의 이름 = "+ch.wp.name);
+		
+		//ch.weapon
+		
 		wp.name = "도끼";
 		System.out.println("또 변경된 무기의 이름 = "+ch.wp.name);//도끼
 		System.out.println(" ");//경계선
