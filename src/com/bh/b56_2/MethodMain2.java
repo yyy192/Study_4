@@ -1,4 +1,4 @@
-package comb.bh.b56_2;
+package com.bh.b56_2;
 
 import java.util.Random;
 

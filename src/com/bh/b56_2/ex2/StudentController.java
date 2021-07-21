@@ -2,7 +2,7 @@ package com.bh.b56_2.ex2;
 
 import java.util.Scanner;
 
-public class StudentMenu {
+public class StudentController {
 	
 	//메서드명 start
 	//1. 전체 정보 출력
@@ -14,6 +14,7 @@ public class StudentMenu {
 		Scanner sc = new Scanner(System.in);
 		StudentView sv = new StudentView();
 		StudentInput si = new StudentInput();
+		StudentSort ss = new StudentSort();
 		
 		System.out.println("학생 수를 입력하세요.");
 		int count = sc.nextInt();
@@ -61,16 +62,19 @@ public class StudentMenu {
 				//학생정보추가 - 학생 한 명을 배열에 추가
 				System.out.println("학생 한 명을 추가하세요.");
 				System.out.println(" ");
-				sts2 = new Student[sts.length+1];
 
 				Student st = si.makeStudent();
 				sts2[sts.length] = st;
 				
 				
-				sts = si.addArray(sts, sts2);
+				sts = si.addArray(sts, sts2); //인자값
 				
 			}else if(c==4) {
 				System.out.println("성적 순으로 출력하세요.");
+				
+				Student [] sort = ss.sortByAvg(sts);
+				
+				sv.viewAll(sort);
 				
 			}else if(c==5) {
 				System.out.println("프로그램을 종료합니다.");

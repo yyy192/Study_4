@@ -9,7 +9,7 @@ public class StudentInput {
 	//2. 복사
 	public Student [] addArray(Student [] sts, Student [] sts2) {
 		
-		
+		                              
 		for(int i=0;i<sts.length;i++) {
 			sts2[i]=sts[i];
 		}
