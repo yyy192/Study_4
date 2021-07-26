@@ -2,7 +2,7 @@ package com.bh.b56_4;
 
 public class Car {
 	
-	String company;
+	static String company = "현대";
 	String brand;
 	String color;
 	int price;
@@ -26,7 +26,7 @@ public class Car {
 	}
 	
 	public Car(String color, int price) {
-		this.company = "현대";
+	
 		this.brand = "펠리세이드";
 		this.color = color;
 		this.price = price;
@@ -37,11 +37,11 @@ public class Car {
 	
 	public void info() {
 		
-		System.out.println("Company : "+company);//this 생략
+		System.out.println("Company : "+Car.company);//this 생략
 		System.out.println("Brand : "+this.brand);
-		System.out.println("Color : "+color);
+		System.out.println("Color : "+this.color);
 		System.out.println("Price : "+this.price);
-		System.out.println("Gitong : "+gitong);
+		System.out.println("Gitong : "+this.gitong);
 	}
 
 }

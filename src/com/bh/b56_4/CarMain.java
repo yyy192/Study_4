@@ -1,4 +1,4 @@
-package com.bh.b56_4;
+ package com.bh.b56_4;
 
 public class CarMain {
 
@@ -9,6 +9,8 @@ public class CarMain {
 		Car car2 = new Car("Red");
 		
 		Car car3 = new Car("Pink", 70000000);
+		
+		Car.company = "BMW";
 
 		
 		car.info();
